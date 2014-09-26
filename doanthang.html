@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<style>
+		#doanthang{
+			border: 2px solid orange;
+		}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script>
+		$(document).ready(function(){
+			var canvas = document.getElementById("doanthang");
+			var context = canvas.getContext("2d");
+			context.beginPath();
+			context.moveTo(50, 50);
+			context.lineTo(200, 50);
+			context.lineWidth = 5;
+			context.strokeStyle = '#0000FF';
+			context.lineCap = 'round';
+			context.stroke();
+		});
+		</script>
+	</head>
+	<body>
+		<canvas id = "doanthang" width = "300" height = "300"></canvas>
+	</body>
+</html>
